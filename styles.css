@@ -588,7 +588,7 @@ body:not(.default-cursor):hover .custom-cursor {
 
 .about-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px; /* Reduced from 1400px for more side padding */
   margin: 0 auto;
   padding: 3rem;
 }
@@ -604,6 +604,7 @@ body:not(.default-cursor):hover .custom-cursor {
     rgba(0, 0, 0, 0.5) 100%
   );
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 0 3rem; /* Added horizontal padding to create more space on sides */
 }
 
 .about-content-wrapper {
@@ -647,16 +648,11 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .about-text-container {
-  background: linear-gradient(90deg, 
-    rgba(0, 0, 0, 0.5) 0%, 
-    rgba(0, 0, 0, 0.85) 25%, 
-    rgba(0, 0, 0, 0.85) 75%, 
-    rgba(0, 0, 0, 0.5) 100%
-  );
+  background: transparent; /* Changed to transparent */
   padding: 3rem;
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: none; /* Removed border */
+  box-shadow: none; /* Removed shadow */
   position: relative;
   z-index: 1;
 }
