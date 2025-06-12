@@ -690,14 +690,14 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .mascot p {
-  font-size: 0.95rem; /* Reduced from 1.1rem to 0.95rem (about 14% smaller) */
+  font-size: 0.75rem; /* Reduced from 0.95rem to 0.75rem (about 21% smaller) */
   font-style: italic;
   color: white;
-  max-width: 220px; /* Reduced from 300px to match image width better */
+  max-width: 180px; /* Reduced from 220px to make text wrap more tightly */
   margin: 0 auto;
+  line-height: 1.3; /* Tightened line height to fit better */
 }
 
-/* CONTACT SECTION */
 .contact-section {
   width: 100%;
   min-height: var(--section-min-height);
@@ -877,7 +877,8 @@ body:not(.default-cursor):hover .custom-cursor {
   }
   
   .mascot p {
-    font-size: 0.85rem; /* Further reduced for mobile */
+    font-size: 0.7rem; /* Further reduced for mobile */
+    max-width: 160px;
   }
   
   .contact-section {
@@ -892,7 +893,6 @@ body:not(.default-cursor):hover .custom-cursor {
     font-size: 2.2rem;
   }
   
-  /* Adjust company showcase for mobile */
   .company-info {
     width: 100%;
     padding: 2rem;
@@ -910,8 +910,9 @@ body:not(.default-cursor):hover .custom-cursor {
   }
   
   .mascot p {
-    font-size: 0.8rem; /* Even smaller for very small screens */
-    max-width: 150px;
+    font-size: 0.65rem; /* Even smaller for very small screens */
+    max-width: 130px;
+    line-height: 1.2;
   }
   
   .about h2 {
