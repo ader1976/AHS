@@ -687,8 +687,8 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .mascot-img {
-  width: 150px;
-  height: 150px;
+  width: 200px; /* Increased from 150px to 200px */
+  height: 200px; /* Increased from 150px to 200px */
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -854,8 +854,8 @@ body:not(.default-cursor):hover .custom-cursor {
   }
   
   .mascot-img {
-    width: 150px;
-    height: 150px;
+    width: 180px; /* Adjusted for responsive design */
+    height: 180px;
   }
   
   .contact-section {
@@ -883,8 +883,8 @@ body:not(.default-cursor):hover .custom-cursor {
 
 @media (max-width: 480px) {
   .mascot-img {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Adjusted for smallest screens */
+    height: 150px;
   }
   
   .about h2 {
