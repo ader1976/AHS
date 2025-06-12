@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Housing Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor">Scroll Down</div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <div class="logo-container">
+          <img src="images/logo.png" alt="Accessible Housing Services Logo" class="logo-img">
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION WITH VIDEO -->
+  <div class="hero-full">
+    <video class="hero-video" muted autoplay loop playsinline>
+      <source src="videos/jeff-roll.mp4" type="video/mp4">
+    </video>
+    <section class="hero">
+      <div class="centered-container">
+        <div class="hero-overlay">
+          <h1>Accessible Housing Services</h1>
+          <p class="hero-subtitle">Providing remote accessibility services nationwide across all 50 states</p>
+          <a href="#services" class="btn-primary">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- COMPANY SHOWCASE - CENTERED -->
+  <section id="company" class="company-showcase fade-in">
+    <div class="centered-container">
+      <div class="company-info">
+        <h2>Our Story: Nearly 20 Years of Trusted Expertise</h2>
+        <p>Since 2007, Accessible Housing Services has been at the forefront of inclusive home design. Our commitment to barrier-free living was nationally recognized in a published feature that highlighted our early leadership in universal design.</p>
+        <div class="article-link">
+          <p>Curious to see how it all started?</p>
+          <a href="assets/2007-magazine-article.pdf" class="magazine-card">
+            <img src="images/magazine.png" alt="Magazine Cover" class="magazine-card-bg">
+            <div class="magazine-content">
+              <span class="view-details">View Article</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERT OPINION REPORTS - Moved higher up as requested -->
+  <section class="service-row fade-in">
+    <div class="service-text">
+      <h2>Expert Opinion Reports</h2>
+      <p>Since 2010, we've provided authoritative expert opinion reports on wheelchair accessible housing to both plaintiff and defense counsel with unwavering objectivity.</p>
+      <p>Our recommendations are grounded in verifiable data rather than subjective interpretations, ensuring credible and defensible findings focused on reasonable accommodations.</p>
+    </div>
+    <div class="service-media">
+      <img src="images/Expert Report Example.jpg" alt="Expert Report Example">
+    </div>
+    <div class="service-form">
+      <h3>Request Report</h3>
+      <form class="contact-form">
+        <input type="text" name="fullName" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <div class="form-row">
+          <input type="text" name="state" placeholder="State">
+          <input type="text" name="postcode" placeholder="Postcode">
+        </div>
+        <textarea name="message" placeholder="Tell us about your case" required></textarea>
+        <button type="submit" class="btn-primary">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <!-- Home Assessments -->
+    <div class="service-row fade-in">
+      <div class="service-text">
+        <h2>Home Assessments</h2>
+        <p>We serve clients everywhere in the United States remotely. Our cutting-edge LiDAR scanning technology brings your house to our expert team virtually, allowing us to deliver prompt, cost-effective evaluations without compromising on accuracy.</p>
+        <p>Even if you're in South Dakota, Alaska, or Hawaii — we can help!</p>
+      </div>
+      <div class="service-media">
+        <img src="images/HAP.png" alt="Home Assessment Process using LiDAR Technology">
+      </div>
+      <div class="service-form">
+        <h3>Request an Assessment</h3>
+        <form class="contact-form">
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number">
+          <div class="form-row">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="postcode" placeholder="Postcode">
+          </div>
+          <textarea name="message" placeholder="Tell us about your needs" required></textarea>
+          <button type="submit" class="btn-primary">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Design Studio -->
+    <div class="service-row fade-in">
+      <div class="service-text">
+        <h2>Design Studio</h2>
+        <p>Accessible remodeling is personal—there's no one-size-fits-all approach. Using LiDAR scanning, we create a precise digital model of your home and collaborate with you to develop layouts that prioritize safety, independence, and dignity.</p>
+        <p>90% of our design clients are served completely remotely!</p>
+      </div>
+      <div class="service-media">
+        <img src="images/Accessible Design Example.jpg" alt="Accessible Design Example">
+      </div>
+      <div class="service-form">
+        <h3>Design Your Space</h3>
+        <form class="contact-form">
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number">
+          <div class="form-row">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="postcode" placeholder="Postcode">
+          </div>
+          <textarea name="message" placeholder="Tell us about your design needs" required></textarea>
+          <button type="submit" class="btn-primary">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Equipment Solutions -->
+    <div class="service-row fade-in">
+      <div class="service-text">
+        <h2>Equipment Solutions</h2>
+        <p>We provide specialized equipment for positioning, transfers, and bathing—including specialty beds, patient lifts, and shower wheelchairs. Our experts collaborate with caregivers to identify the perfect equipment solutions tailored to your unique needs.</p>
+      </div>
+      <div class="service-media">
+        <img src="images/Specialized-Equipment.png" alt="Specialized Equipment">
+      </div>
+      <div class="service-form">
+        <h3>Request Quote</h3>
+        <form class="contact-form">
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number">
+          <div class="form-row">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="postcode" placeholder="Postcode">
+          </div>
+          <textarea name="message" placeholder="Tell us about your equipment needs" required></textarea>
+          <button type="submit" class="btn-primary">Request Quote</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Accessible Housing Search -->
+    <div class="service-row fade-in">
+      <div class="service-text">
+        <h2>Accessible Housing Search</h2>
+        <p>Finding wheelchair-accessible housing is a nationwide challenge. With two decades of expertise, we guide you through this complex process with precision and care, no matter where you're located in the US.</p>
+        <p class="fee-notice">This is a fee-based service — come prepared to invest in your accessible home search.</p>
+      </div>
+      <div class="service-media">
+        <img src="images/Accessible-Housing.jpg" alt="Accessible Housing">
+      </div>
+      <div class="service-form">
+        <h3>Find Accessible Homes</h3>
+        <form class="contact-form">
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number">
+          <div class="form-row">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="postcode" placeholder="Postcode">
+          </div>
+          <textarea name="message" placeholder="Tell us about your housing needs" required></textarea>
+          <button type="submit" class="btn-primary">Start Your Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <h3>Accessibility Experts: Where Experience Meets Empathy</h3>
+      <div class="about-content">
+        <div class="about-text-container">
+          <div class="about-text">
+            <p>Since 1998, we've been navigating the complex landscape of residential accessibility solutions, formalizing our expertise under Accessible Housing Services in 2007. Our portfolio includes high-profile cases involving catastrophically injured individuals, where our unique strength lies in harmonizing competing interests — balancing homeowners' desires for quality upgrades against budgetary constraints.</p>
+            <p>Our multidisciplinary team of healthcare professionals, construction specialists, and real estate experts brings a holistic approach to every project. We serve clients nationwide through our innovative remote assessment process, with over 90% of our clients served completely virtually.</p>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/jeff-1.jpg" alt="Our team at work" class="about-img">
+          <div class="mascot">
+            <img src="images/ernie.jpg" class="mascot-img">
+            <p>Meet Ernie, our valued team member and accessibility advocate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>We Work Remotely Across All 50 States</h2>
+      <p>90% of our clients are served completely remotely. No matter where you are located in the United States, we can help with your accessible housing needs.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>info@accessiblehousing.com</p>
+        </div>
+        <div class="contact-item">
+          <h3>Phone</h3>
+          <p>(555) 123-4567</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Accessible Housing Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle header visibility on scroll
+    const header = document.querySelector('.site-header');
+    const heroFull = document.querySelector('.hero-full');
+    const logo = document.querySelector('.logo');
+    const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
+    const cursor = document.querySelector('.custom-cursor');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > heroFull.offsetHeight) {
+        logo.style.opacity = '0';
+        navLinks.style.opacity = '0';
+        body.classList.add('default-cursor');
+        cursor.style.display = 'none';
+      } else {
+        logo.style.opacity = '1';
+        navLinks.style.opacity = '1';
+        body.classList.remove('default-cursor');
+        cursor.style.display = 'flex';
+      }
+    });
+
+    // Custom cursor
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Scroll reveal animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.fade-in').forEach(el => {
+        obs.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "image": "images/blog1.png",
+    "title": "LiDAR Innovations in Home Assessments",
+    "excerpt": "LiDAR technology is revolutionizing home assessments by providing fast, high-precision 3D scans of interior spaces. Inspectors and contractors can now capture accurate layouts, detect structural issues, and plan renovations with greater efficiency. It's a powerful tool that enhances both safety evaluations and design planning, all without the need for invasive measurements.",
+    "url": "/blog/lidar-innovations-home-assessments.html"
+  },
+  {
+    "image": "images/blog2.jpg",
+    "title": "Designing for Dignity: Accessible Remodels",
+    "excerpt": "Creating a home that supports independence starts with thoughtful design. From wider doorways to zero-step entries, accessible remodels enhance mobility without compromising style. These upgrades prioritize comfort, safety, and dignity, empowering residents to live confidently in their own space.",
+    "url": "/blog/designing-for-dignity-accessible-remodels.html"
+  }
+]
