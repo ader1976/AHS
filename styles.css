@@ -593,6 +593,39 @@ body:not(.default-cursor):hover .custom-cursor {
   padding: 3rem;
 }
 
+.about-frame {
+  background: white;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, 
+    var(--gradient-primary) 0%, 
+    var(--gradient-secondary) 50%, 
+    var(--gradient-accent) 100%
+  );
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.about-content-wrapper {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
 .about h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.2rem;
