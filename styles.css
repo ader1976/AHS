@@ -113,6 +113,7 @@ a {
   display: flex;
   align-items: center;
   transition: opacity var(--transition);
+  margin-top: 15px; /* Added margin to move logo down */
 }
 
 .logo-container {
@@ -573,7 +574,6 @@ body:not(.default-cursor):hover .custom-cursor {
   text-align: center;
 }
 
-/* ABOUT SECTION */
 .about {
   width: 100%;
   display: flex;
@@ -698,7 +698,6 @@ body:not(.default-cursor):hover .custom-cursor {
   line-height: 1.2; /* Tightened line height even more */
 }
 
-/* CONTACT SECTION */
 .contact-section {
   width: 100%;
   min-height: var(--section-min-height);
