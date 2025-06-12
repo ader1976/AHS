@@ -573,7 +573,7 @@ body:not(.default-cursor):hover .custom-cursor {
   text-align: center;
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION - MODIFIED */
 .about {
   width: 100%;
   display: flex;
@@ -581,7 +581,6 @@ body:not(.default-cursor):hover .custom-cursor {
   justify-content: center;
   padding: 0;
   margin: 0;
-  /* Removed gradient background */
 }
 
 .about-text-container {
@@ -593,9 +592,9 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .about-text p {
-  font-size: 1.4rem;
+  font-size: 1rem; /* Changed from 1.4rem to 1rem (text-base) */
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem; /* Changed from 2rem to 0.75rem (mb-3) */
   color: white;
 }
 
@@ -603,21 +602,21 @@ body:not(.default-cursor):hover .custom-cursor {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 5rem; /* REDUCED from 10rem to 5rem */
+  padding: 3rem; /* Changed from 5rem to 3rem (py-12) */
 }
 
 .about h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem; /* REDUCED from 6rem to 3rem */
-  margin-bottom: 1.5rem; /* REDUCED from 3rem to 1.5rem */
+  font-size: 1.875rem; /* Changed from 3rem to 1.875rem (text-3xl) */
+  margin-bottom: 1.5rem; /* Changed from 1.5rem to 1.5rem (mb-6) */
   text-align: center;
 }
 
 .about h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 2.2rem; /* REDUCED from 4.4rem to 2.2rem */
-  margin-bottom: 2.5rem; /* REDUCED from 5rem to 2.5rem */
+  font-size: 1.25rem; /* Changed from 2.2rem to 1.25rem (text-xl) */
+  margin-bottom: 1rem; /* Changed from 2.5rem to 1rem (mb-4) */
   text-align: center;
   color: var(--primary);
 }
@@ -633,7 +632,7 @@ body:not(.default-cursor):hover .custom-cursor {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem; /* REDUCED from 4rem to 2rem */
+  gap: 2rem;
 }
 
 .about-img {
@@ -647,15 +646,15 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .mascot-img {
-  width: 150px; /* REDUCED from 300px to 150px */
-  height: 150px; /* REDUCED from 300px to 150px */
+  width: 9rem; /* Changed from 150px to 9rem (w-36) */
+  height: 9rem; /* Changed from 150px to 9rem (h-36) */
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem; /* REDUCED from 2rem to 1rem */
+  margin-bottom: 1rem;
 }
 
 .mascot p {
-  font-size: 1.2rem; /* REDUCED from 2.4rem to 1.2rem */
+  font-size: 1rem; /* Changed from 1.2rem to 1rem (text-base) */
   font-style: italic;
 }
 
@@ -681,21 +680,21 @@ body:not(.default-cursor):hover .custom-cursor {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 5rem; /* REDUCED from 10rem to 5rem */
+  padding: 5rem;
   text-align: center;
 }
 
 .contact-section h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem; /* REDUCED from 6rem to 3rem */
-  margin-bottom: 1.5rem; /* REDUCED from 3rem to 1.5rem */
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
   color: var(--primary);
 }
 
 .contact-section p {
-  font-size: 1.5rem; /* REDUCED from 3rem to 1.5rem */
+  font-size: 1.5rem;
   line-height: 1.8;
-  margin-bottom: 3rem; /* REDUCED from 6rem to 3rem */
+  margin-bottom: 3rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -704,8 +703,8 @@ body:not(.default-cursor):hover .custom-cursor {
 .contact-details {
   display: flex;
   justify-content: center;
-  gap: 5rem; /* REDUCED from 10rem to 5rem */
-  margin-top: 3rem; /* REDUCED from 6rem to 3rem */
+  gap: 5rem;
+  margin-top: 3rem;
 }
 
 .contact-item {
@@ -714,13 +713,13 @@ body:not(.default-cursor):hover .custom-cursor {
 
 .contact-item h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem; /* REDUCED from 3.6rem to 1.8rem */
-  margin-bottom: 1rem; /* REDUCED from 2rem to 1rem */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
   color: var(--primary);
 }
 
 .contact-item p {
-  font-size: 1.4rem; /* REDUCED from 2.8rem to 1.4rem */
+  font-size: 1.4rem;
   margin-bottom: 0;
 }
 
@@ -742,10 +741,7 @@ body:not(.default-cursor):hover .custom-cursor {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
-  .service-row {
-    grid-template-columns: 1fr;
-  }
-  
+  .service-row,
   .about-content {
     grid-template-columns: 1fr;
   }
