@@ -573,7 +573,7 @@ body:not(.default-cursor):hover .custom-cursor {
   text-align: center;
 }
 
-/* ABOUT SECTION - MODIFIED */
+/* ABOUT SECTION */
 .about {
   width: 100%;
   display: flex;
@@ -583,40 +583,26 @@ body:not(.default-cursor):hover .custom-cursor {
   margin: 0;
 }
 
-.about-text-container {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-text p {
-  font-size: 1rem; /* Changed from 1.4rem to 1rem (text-base) */
-  line-height: 1.8;
-  margin-bottom: 0.75rem; /* Changed from 2rem to 0.75rem (mb-3) */
-  color: white;
-}
-
 .about-container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem; /* Changed from 5rem to 3rem (py-12) */
+  padding: 3rem;
 }
 
 .about h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.875rem; /* Changed from 3rem to 1.875rem (text-3xl) */
-  margin-bottom: 1.5rem; /* Changed from 1.5rem to 1.5rem (mb-6) */
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--primary);
 }
 
 .about h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.25rem; /* Changed from 2.2rem to 1.25rem (text-xl) */
-  margin-bottom: 1rem; /* Changed from 2.5rem to 1rem (mb-4) */
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   color: var(--primary);
 }
@@ -626,6 +612,26 @@ body:not(.default-cursor):hover .custom-cursor {
   grid-template-columns: 60% 40%;
   gap: 3rem;
   align-items: center;
+}
+
+.about-text-container {
+  background: linear-gradient(90deg, 
+    rgba(0, 0, 0, 0.5) 0%, 
+    rgba(0, 0, 0, 0.85) 25%, 
+    rgba(0, 0, 0, 0.85) 75%, 
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  padding: 3rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-text p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: white;
 }
 
 .about-image {
@@ -646,15 +652,15 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .mascot-img {
-  width: 9rem; /* Changed from 150px to 9rem (w-36) */
-  height: 9rem; /* Changed from 150px to 9rem (h-36) */
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
 }
 
 .mascot p {
-  font-size: 1rem; /* Changed from 1.2rem to 1rem (text-base) */
+  font-size: 1.2rem;
   font-style: italic;
 }
 
