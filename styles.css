@@ -113,7 +113,7 @@ a {
   display: flex;
   align-items: center;
   transition: opacity var(--transition);
-  margin-top: 15px; /* Added margin to move logo down */
+  margin-top: 25px; /* Increased margin to move logo down more */
 }
 
 .logo-container {
@@ -689,15 +689,6 @@ body:not(.default-cursor):hover .custom-cursor {
   border: 3px solid var(--gradient-primary);
 }
 
-.mascot p {
-  font-size: 0.6rem; /* Further reduced from 0.75rem to 0.6rem */
-  font-style: italic;
-  color: white;
-  max-width: 150px; /* Reduced from 180px to make text wrap more tightly */
-  margin: 0 auto;
-  line-height: 1.2; /* Tightened line height even more */
-}
-
 .contact-section {
   width: 100%;
   min-height: var(--section-min-height);
@@ -909,11 +900,6 @@ body:not(.default-cursor):hover .custom-cursor {
     height: 180px;
   }
   
-  .mascot p {
-    font-size: 0.55rem;
-    max-width: 140px;
-  }
-  
   .contact-section {
     padding: 2rem 0;
   }
@@ -961,12 +947,6 @@ body:not(.default-cursor):hover .custom-cursor {
     height: 150px;
   }
   
-  .mascot p {
-    font-size: 0.5rem;
-    max-width: 120px;
-    line-height: 1.1;
-  }
-  
   .about h2,
   .contact-section h2 {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary) 100%);
@@ -985,8 +965,7 @@ body:not(.default-cursor):hover .custom-cursor {
   /* Fallback for browsers that don't support gradients */
   @supports not (background-clip: text) {
     .about h2, 
-    .contact-section h2,
-    .mascot p {
+    .contact-section h2 {
       background: none;
       -webkit-text-fill-color: var(--primary);
       color: var(--primary);
