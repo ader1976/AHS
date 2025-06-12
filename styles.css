@@ -430,9 +430,8 @@ body:not(.default-cursor):hover .custom-cursor {
 .service-row {
   display: grid;
   grid-template-columns: 35% 30% 35%;
-  margin: 0 0 3rem 0;
+  margin: 0 0 3rem;
   min-height: var(--section-min-height);
-  /* Match the hero and company showcase gradient */
   background: linear-gradient(90deg, 
     rgba(0, 0, 0, 0.5) 0%, 
     rgba(0, 0, 0, 0.85) 25%, 
@@ -450,7 +449,6 @@ body:not(.default-cursor):hover .custom-cursor {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* Match the gradient style */
   background: linear-gradient(90deg, 
     rgba(30, 30, 30, 0.75) 0%, 
     rgba(30, 30, 30, 0.9) 25%, 
@@ -470,7 +468,6 @@ body:not(.default-cursor):hover .custom-cursor {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* Match the gradient style */
   background: linear-gradient(90deg, 
     rgba(30, 30, 30, 0.75) 0%, 
     rgba(30, 30, 30, 0.9) 25%, 
@@ -693,10 +690,10 @@ body:not(.default-cursor):hover .custom-cursor {
 }
 
 .mascot p {
-  font-size: 1.1rem;
+  font-size: 0.95rem; /* Reduced from 1.1rem to 0.95rem (about 14% smaller) */
   font-style: italic;
   color: white;
-  max-width: 300px;
+  max-width: 220px; /* Reduced from 300px to match image width better */
   margin: 0 auto;
 }
 
@@ -879,6 +876,10 @@ body:not(.default-cursor):hover .custom-cursor {
     height: 180px;
   }
   
+  .mascot p {
+    font-size: 0.85rem; /* Further reduced for mobile */
+  }
+  
   .contact-section {
     padding: 0;
   }
@@ -906,6 +907,11 @@ body:not(.default-cursor):hover .custom-cursor {
   .mascot-img {
     width: 150px;
     height: 150px;
+  }
+  
+  .mascot p {
+    font-size: 0.8rem; /* Even smaller for very small screens */
+    max-width: 150px;
   }
   
   .about h2 {
