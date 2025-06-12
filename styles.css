@@ -12,6 +12,9 @@
   --box-bg: rgba(0, 0, 0, 0.95);
   --box-bg-lighter: rgba(30, 30, 30, 0.95);
   --section-min-height: 600px; /* Consistent section height */
+  --gradient-primary: #0A84FF;
+  --gradient-secondary: #00C7FF;
+  --gradient-accent: #E6F7FF;
 }
 
 html {
@@ -595,7 +598,15 @@ body:not(.default-cursor):hover .custom-cursor {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: var(--primary);
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  transform: translateZ(0);
+  background: linear-gradient(135deg, var(--gradient-primary) 0%, var(--gradient-secondary) 45%, var(--gradient-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .about h3 {
@@ -605,6 +616,8 @@ body:not(.default-cursor):hover .custom-cursor {
   margin-bottom: 1.5rem;
   text-align: center;
   color: var(--primary);
+  position: relative;
+  z-index: 1;
 }
 
 .about-content {
@@ -625,6 +638,8 @@ body:not(.default-cursor):hover .custom-cursor {
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 .about-text p {
@@ -632,6 +647,8 @@ body:not(.default-cursor):hover .custom-cursor {
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .about-image {
@@ -639,6 +656,8 @@ body:not(.default-cursor):hover .custom-cursor {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .about-img {
@@ -649,19 +668,27 @@ body:not(.default-cursor):hover .custom-cursor {
 
 .mascot {
   text-align: center;
+  position: relative;
 }
 
 .mascot-img {
-  width: 150px;
-  height: 150px;
+  width: 480px;
+  height: 320px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   margin-bottom: 1rem;
+  margin-right: 32px;
 }
 
 .mascot p {
   font-size: 1.2rem;
   font-style: italic;
+  background: linear-gradient(135deg, var(--gradient-primary) 0%, var(--gradient-secondary) 45%, var(--gradient-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
 }
 
 /* CONTACT SECTION */
@@ -813,6 +840,14 @@ body:not(.default-cursor):hover .custom-cursor {
   
   .about h2 {
     font-size: 2.2rem;
+    background: linear-gradient(135deg, var(--gradient-primary) 0%, var(--gradient-secondary) 35%, var(--gradient-accent) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .mascot-img {
+    width: 75%;
+    height: auto;
   }
   
   .contact-section {
@@ -835,5 +870,27 @@ body:not(.default-cursor):hover .custom-cursor {
   
   .company-info h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mascot-img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .about h2 {
+    background: linear-gradient(135deg, var(--gradient-primary) 0%, var(--gradient-secondary) 25%, var(--gradient-accent) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Fallback for browsers that don't support gradients */
+  @supports not (background-clip: text) {
+    .about h2, .mascot p {
+      background: none;
+      -webkit-text-fill-color: var(--gradient-primary);
+      color: var(--gradient-primary);
+    }
   }
 }
